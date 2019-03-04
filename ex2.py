@@ -1,7 +1,3 @@
-import sys
-import copy
-
-
 def read(file_name):
     #this function read a file line by line and return list contain lines
     with open(file_name, "r") as file:
