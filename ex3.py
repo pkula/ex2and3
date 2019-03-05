@@ -18,5 +18,3 @@ def sum(name):
         n += int(number)
     return n
 
-
-print(sum('skychallenge_accounting_input.txt'))

@@ -21,4 +21,4 @@ def validator(name):
     return n
 
 
-print(validator('skychallenge_skyphrase_input.txt'))
+
