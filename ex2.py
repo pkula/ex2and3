@@ -4,21 +4,18 @@ def read(file_name):
         passwords = file.readlines()
     return passwords
 
+
+def is_val_one_password(password):
+    words = password.split()
+    for word in words:
+        if words.count(word) != 1:
+            return False
+    return True
+
 def validator(name):
     passwords = read(name)
     n = 0
-    is_bad_password = False
     for password in passwords:
-        words = password.split()
-        for i in range (0,len(words)-1):
-            for w in range(i+1,len(words)):
-                if words[i].strip() == words[w].strip():
-                    is_bad_password = True
-        if is_bad_password:
-            is_bad_password = False
-        else:
-            n+=1
+        n = n+1 if is_val_one_password(password) else n
     return n
-
-
 
