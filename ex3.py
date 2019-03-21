@@ -4,6 +4,7 @@ def read(file_name):
         lines = file.readlines()
     return lines
 
+
 def sum(name):
     doc = read(name)[0]
     signs = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i',
@@ -17,4 +18,3 @@ def sum(name):
     for number in numbers:
         n += int(number)
     return n
-
